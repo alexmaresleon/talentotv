@@ -10,20 +10,20 @@ use Livewire\WithPagination;
 class MyCourses extends Component
 {
     use WithPagination;
-    public $search;
+    //public $course, $search, $user;
+    public $user, $search, $user_id;
+
+    public function mount(User $user){
+        $this->user = $user;        
+    }
 
     public function render()
     {
-        // Obtenemos la coleccion de todos los cursos del usuario autenticado a los que esta inscrito
-        $courses = Course::where('title', 'LIKE', '%' . $this->search . '%')                            
-                            ->where('user_id', auth()->user()->id)                            
-                            ->where('status', 3)
-                            ->paginate(5);
-
-        // coleccion de cursos por usuario
-        // $users = User::has('description');
-
-        return view('livewire.my-courses', compact('courses'));
+        $user_id= auth()->user()->id;
+        $user = User::find($user_id);
+        $my_courses = $user->courses_enroled;         
+        
+        return view('livewire.my-courses', compact('my_courses'));
     }
 
     public function limpiar_pagina(){

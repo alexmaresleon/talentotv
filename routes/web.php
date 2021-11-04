@@ -6,6 +6,7 @@ use App\Http\Controllers\Admin\HomeController;
 use App\Http\Controllers\CourseController;
 
 use App\Http\Livewire\CourseStatus;
+use Illuminate\Support\Facades\Artisan;
 
 /*
 |--------------------------------------------------------------------------
@@ -31,4 +32,3 @@ Route::get('cursos/{course}', [CourseController::class, 'show'])->name('courses.
 Route::post('cursos/{course}/enroled', [CourseController::class, 'enrolled'])->middleware('auth')->name('courses.enroled');
 
 Route::get('course-status/{course}', CourseStatus::class)->name('courses.status')->middleware('auth');
-
