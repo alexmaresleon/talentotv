@@ -16,6 +16,7 @@
         "laravelcollective/html": "^6.2",
         "livewire/livewire": "^2.5",
         "mercadopago/dx-php": "^2.4",
+        "spatie/laravel-analytics": "^3.11",
         "spatie/laravel-permission": "^5.1"
     },
     "require-dev": {
