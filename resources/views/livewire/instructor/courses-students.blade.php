@@ -1,5 +1,5 @@
 <div>    
-    <h1 class="text-2xl font-bold mb-4">ESTUDIANTES INSCRITOS A ESTE CURSO</h1>
+    <h1 class="text-2xl font-bold mb-4">APRENDICES INSCRITOS A ESTE CURSO</h1>
     
     <x-table-responsive>
         <div class="px-6 py-4">
@@ -13,7 +13,7 @@
                     <tr>
                         <th scope="col"
                             class="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">
-                            Nombre del Alumno
+                            Nombre del Aprendiz
                         </th>
                         <th scope="col"
                             class="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">
@@ -65,7 +65,7 @@
 
         @else
             <div class="px-6 py-4">
-                <strong>No hay estudiantes para mostrar</strong>
+                <strong>No hay aprendices para mostrar</strong>
             </div>
 
         @endif

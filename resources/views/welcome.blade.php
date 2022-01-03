@@ -4,7 +4,7 @@
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-36">
             <div class="w-full md:w-3/4 lg:w-1/2">
                 <h1 class="text-black font-bold text-4xl">Bienvenido a TalentoTV</h1>
-                <p class="text-black text-lg mt-2 mb-4">-- Tu plataforma educativa --</p>
+                <p class="text-black text-lg mt-2 mb-4">-- Tu Comunidad de Aprendizaje --</p>
                 <!-- Search box -->
                 @livewire('search')
             </div>
@@ -94,7 +94,7 @@
                 INFORMACIÓN
                 <ul class="text-sm text-white list-inline">
                     <li class="cursor-pointer">Aviso de privacidad</li>
-                    <li class="cursor-pointer">Unete como maestro</li>
+                    <li class="cursor-pointer">Unete como mentor</li>
                     <li class="cursor-pointer">Soporte</li>
                 </ul>
             </nav>
@@ -102,7 +102,7 @@
                 LINKS
                 <ul class="text-sm text-white list-inline">
                     <li class="cursor-pointer">Aviso de privacidad</li>
-                    <li class="cursor-pointer">Unete como maestro</li>
+                    <li class="cursor-pointer">Unete como mentor</li>
                     <li class="cursor-pointer">Soporte</li>
                 </ul>
             </nav>
@@ -110,7 +110,7 @@
                 SOPORTE
                 <ul class="text-sm text-white list-inline">
                     <li class="cursor-pointer">Aviso de privacidad</li>
-                    <li class="cursor-pointer">Unete como maestro</li>
+                    <li class="cursor-pointer">Unete como mentor</li>
                     <li class="cursor-pointer">Soporte</li>
                 </ul>
             </nav>

@@ -10,7 +10,7 @@
                 <h2 class="text-xl mb-3">{{ $course->subtitle }}</h2>
                 <p class="mb-2"><i class="fas fa-chart-line"></i> Nivel: {{ $course->level->name }}</p>
                 <p class="mb-2"><i class="far fa-file-video"></i> Tema: {{ $course->category->name }}</p>
-                <p class="mb-2"><i class="fas fa-users"></i> Estudiantes: {{ $course->students_count }}</p>
+                <p class="mb-2"><i class="fas fa-users"></i> Aprendices: {{ $course->students_count }}</p>
                 <p><i class="fas fa-star"></i> Calificación del curso: {{ $course->rating }}</p>
 
             </div>
@@ -98,7 +98,7 @@
                         <img class="h-12 w-12 object-cover rounded-full shadow-lg"
                             src="{{ $course->teacher->profile_photo_url }}" alt="{{ $course->teacher->name }}">
                         <div class="ml-4">
-                            <h1 class="font-bold text-gray-500 text-lg">Maestro: {{ $course->teacher->name }}</h1>
+                            <h1 class="font-bold text-gray-500 text-lg">Mentor: {{ $course->teacher->name }}</h1>
                             <a class="text-blue-400 text-sm font-bold"
                                 href="">{{ '@' . Str::slug($course->teacher->name, '') }}</a>
                         </div>

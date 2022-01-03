@@ -4,7 +4,7 @@
     <img class="h-36 w-full object-cover" src="{{ Storage::url($course->image->url) }}" alt="">
     <div class="card-body flex-1 flex flex-col">
         <h1 class="card-title">{{ Str::limit($course->title, 35) }}</h1>
-        <p class="text-gray-500 text-sm mb-2 mt-auto">Maestro: {{ Str::limit($course->teacher->name, 25) }}</p>
+        <p class="text-gray-500 text-sm mb-2 mt-auto">Mentor: {{ Str::limit($course->teacher->name, 25) }}</p>
 
         <div class="flex ">
             <ul class=" flex text-sm">

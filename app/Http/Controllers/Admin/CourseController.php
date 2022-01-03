@@ -38,7 +38,7 @@ class CourseController extends Controller
         $course->status = 3;
         $course->save();
 
-        // Enviamos correo al maestro
+        // Enviamos correo al mentor
         $mail = new ApprovedCourse($course);
 
         Mail::to($course->teacher->email)->queue($mail);
@@ -65,13 +65,13 @@ class CourseController extends Controller
         $course->status = 1;
         $course->save();
 
-        // Enviamos el correo al maestro con las observaciones        
+        // Enviamos el correo al mentor con las observaciones        
         $mail = new RejectCourse($course);
 
         Mail::to($course->teacher->email)->queue($mail);
 
         // Redircciona al usuario a la pagina de cursos por aprobar
-        return redirect()->route('admin.courses.index')->with('info', 'Se enviarón las observaciones al maestro con exito');
+        return redirect()->route('admin.courses.index')->with('info', 'Se enviarón las observaciones al mentor con exito');
 
     }
 }

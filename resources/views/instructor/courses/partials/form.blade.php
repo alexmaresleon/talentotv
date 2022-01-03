@@ -69,9 +69,7 @@
     </figure>
 
     <div>
-        <p class="mb-2">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Blanditiis pariatur facere
-            vero sint minus nostrum cum qui eum consectetur, praesentium, aspernatur dolor quibusdam minima labore
-            veritatis, hic ex aliquam provident?</p>
+        <p class="mb-2">Te recomendamos que selecciones una imagen que describa en un solo vistazo lo que deseas proyectar sobre tu curso, la imagen puede ser en formato jpg o png.</p>
         {!! Form::file('file', ['class' => 'form-input w-full'. ($errors->has('file') ? ' border-red-600' : ''), 'id' => 'file', 'accept' => 'image/*']) !!}
         @error('file')
             <strong class="text-red-600 text-xs">{{ $message }}</strong>
